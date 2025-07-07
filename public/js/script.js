@@ -82,3 +82,29 @@ const invert = (drumType) => {
       break;
   }
 }
+
+const getNeighborPads = (x, y, size) => {
+  const neighborPads = [];
+
+  if (x < 0 || x >= size || y < 0 || y >= size || size <= 0) {
+    return neighborPads;
+  }
+
+  if (x - 1 >= 0) {
+    neighborPads.push([x - 1, y]); // Left
+  }
+
+  if (x + 1 < size) {
+    neighborPads.push([x + 1, y]); // Right
+  }
+
+  if (y - 1 >= 0) {
+    neighborPads.push([x, y - 1]); // Bottom
+  }
+
+  if (y + 1 < size) {
+    neighborPads.push([x, y + 1]); // Top
+  }
+
+  return neighborPads;
+}

@@ -39,7 +39,7 @@ describe('Beat Mix Problem Set - script.js file', () => {
   });
 
   describe('Drum Arrays', () => {
-    
+
     it('a variable called kicks should exist', () => {
       expect(kicks).to.not.be.undefined;
     });
@@ -325,49 +325,49 @@ describe('Preset function - presetHandler.js file', () => {
 
     describe('method === \'GET\'', () => {
 
-      it('should return an array', function() {
+      it('should return an array', function () {
         expect(presetHandler('GET')).to.be.an.instanceOf(Array);
       });
 
-      it('should return 200 as the first element for a valid array index', function() {
+      it('should return 200 as the first element for a valid array index', function () {
         expect(presetHandler('GET', 0)[0]).to.equal(200);
       });
 
-      it('should return the correct preset array as the second element', function() {
+      it('should return the correct preset array as the second element', function () {
         let testPreset = ['test', 'test'];
         presets[0] = testPreset;
         expect(presetHandler('GET', 0)[1]).to.deep.equal(presets[0]);
       });
 
-      it('should return 404 as the first element for an out-of-range array index', function() {
+      it('should return 404 as the first element for an out-of-range array index', function () {
         expect(presetHandler('GET', 1240)[0]).to.equal(404);
         expect(presetHandler('GET', -1)[0]).to.equal(404);
       });
-      
+
     });
 
     describe('method === \'PUT\'', () => {
 
-      it('should return an array', function() {
+      it('should return an array', function () {
         expect(presetHandler('PUT')).to.be.an.instanceOf(Array);
       });
 
-      it('should return 200 as the first element for a valid array index', function() {
+      it('should return 200 as the first element for a valid array index', function () {
         expect(presetHandler('PUT', 0, ['newTest'])[0]).to.equal(200);
       });
 
-      it('should return the updated preset array as the second element', function() {
+      it('should return the updated preset array as the second element', function () {
         const testPreset = ['newTest', 'newTest'];
         expect(presetHandler('PUT', 0, testPreset)[1]).to.deep.equal(testPreset);
       });
 
-      it('should set the preset at the correct index with the new presetArray', function() {
+      it('should set the preset at the correct index with the new presetArray', function () {
         const persistentPreset = ['persistenceTest', 'persistenceTest'];
         presetHandler('PUT', 0, persistentPreset);
         expect(presets[0]).to.deep.equal(persistentPreset);
       });
 
-      it('should return 404 as the first element for an out-of-range array index', function() {
+      it('should return 404 as the first element for an out-of-range array index', function () {
         expect(presetHandler('PUT', 1240)[0]).to.equal(404);
         expect(presetHandler('PUT', -1)[0]).to.equal(404);
       });
@@ -382,8 +382,7 @@ describe('Preset function - presetHandler.js file', () => {
 
   });
 
-  // Remove the 'x' before 'describe' to run these tests when you want to attempt the bonus!
-  xdescribe('BONUS: getNeighborPads() function', () => {
+  describe('BONUS: getNeighborPads() function', () => {
 
     it('should exist and be a function', () => {
       getNeighborPads;
