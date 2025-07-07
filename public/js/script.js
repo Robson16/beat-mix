@@ -57,3 +57,28 @@ const clear = (drumType) => {
       break;
   }
 }
+
+const invert = (drumType) => {
+  if (typeof drumType !== 'string') {
+    return;
+  }
+
+  if (!['kicks', 'snares', 'hiHats', 'rideCymbals'].includes(drumType)) {
+    return;
+  }
+
+  switch (drumType) {
+    case 'kicks':
+      kicks = kicks.map((val) => !val);
+      break;
+    case 'snares':
+      snares = snares.map((val) => !val);
+      break;
+    case 'hiHats':
+      hiHats = hiHats.map((val) => !val);
+      break;
+    case 'rideCymbals':
+      rideCymbals = rideCymbals.map((val) => !val);
+      break;
+  }
+}
