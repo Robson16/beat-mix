@@ -1,7 +1,7 @@
 {
   "name": "beat-mix",
   "version": "1.0.0",
-  "description": "beat mix project from codecademy",
+  "description": "A dynamic beat-making music machine application, developed as part of Codecademy's 'Create a Back-End App with JavaScript' skill path. This project implements drum sequencing, grid manipulation, and server-side preset management.",
   "main": "index.js",
   "scripts": {
     "test": "mocha",
@@ -10,7 +10,18 @@
   },
   "author": "Robson16",
   "license": "MIT",
-  "homepage": "https://beat-mix-three.vercel.app",
+  "keywords": [
+    "beat",
+    "mix",
+    "codecademy",
+    "project",
+    "music",
+    "drum machine",
+    "backend",
+    "javascript",
+    "express"
+  ],
+  "homepage": "https://github.com/Robson16/beat-mix#readme",
   "repository": {
     "type": "git",
     "url": "https://github.com/Robson16/beat-mix.git"
