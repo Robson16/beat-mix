@@ -1,5 +1,7 @@
 # Beat Mix
 
+![Beat Mix](./.github/screenshot.png)
+
 ## Project Overview
 
 This **Beat Mix** project is a dynamic music-making application that I developed as part of Codecademy's **"Create a Back-End App with JavaScript"** skill path. The primary goal was to build a functional beat machine capable of looping through a 16-step grid across four different drum types.
