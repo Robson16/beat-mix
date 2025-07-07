@@ -13,12 +13,7 @@ The application allows users to:
 
 This project provided valuable hands-on experience in both front-end JavaScript logic for interactive UIs and back-end API development with Node.js and Express for data persistence.
 
-You can watch a video demonstration of the final application's capabilities here:
-
-<video width="100%" height="100%" controls>
-   <source src="https://s3.amazonaws.com/codecademy-content/programs/build-apis/solution-videos/BeatMix480.mov" type="video/mp4">
-   Your browser does not support the video tag. Please click [here to watch the demo video](https://s3.amazonaws.com/codecademy-content/programs/build-apis/solution-videos/BeatMix480.mov).
-</video>
+You can watch a video demonstration of the final application's capabilities [here](https://s3.amazonaws.com/codecademy-content/programs/build-apis/solution-videos/BeatMix480.mov).
 
 ---
 
@@ -26,19 +21,27 @@ You can watch a video demonstration of the final application's capabilities here
 
 To explore this project locally, follow these steps:
 
-1.  **Download the Starter Code:** You can get the initial project files from [here](https://s3.amazonaws.com/codecademy-content/PRO/skill-paths/backend-javascript/projects/beat-mix/project-2-beat-mix-start.zip). Unzip the folder to access the project contents.
-2.  **Install Dependencies:** Navigate to the root directory of the project in your terminal and run:
+1.  **Clone the Repository:** Start by cloning this repository to your local machine:
+    ```bash
+    git clone https://github.com/Robson16/beat-mix.git
+    ```
+2.  **Navigate to the Project Directory:** Change into the newly cloned project folder:
+    ```bash
+    cd beat-mix
+    ```
+3.  **Install Dependencies:** Once inside the project directory, install all necessary Node.js dependencies:
     ```bash
     npm install
     ```
-3.  **Start the Server:** Once dependencies are installed, you can start the development server:
+4.  **Start the Server:** After dependencies are installed, you can start the development server:
     ```bash
     npm run start
     # Or, for live reloading during development:
     # npm run dev
     ```
     You should see `Server listening on port 4001` in your terminal, indicating the server is running. Keep this terminal window open as the server must be active for the application to function correctly.
-4.  **Open the Application:** Open **index.html** in your web browser. The application is designed to run in modern browsers like **Google Chrome** (version 60+) or **Mozilla Firefox** (version 55+).
+
+5.  **Open the Application:** Open **index.html** in your web browser. The application is designed to run in modern browsers like **Google Chrome** (version 60+) or **Mozilla Firefox** (version 55+).
 
 ---
 
