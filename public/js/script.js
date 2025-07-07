@@ -32,3 +32,28 @@ const toggleDrum = (drumType, index) => {
       break;
   }
 }
+
+const clear = (drumType) => {
+  if (typeof drumType !== 'string') {
+    return;
+  }
+
+  if (!['kicks', 'snares', 'hiHats', 'rideCymbals'].includes(drumType)) {
+    return;
+  }
+
+  switch (drumType) {
+    case 'kicks':
+      kicks.fill(false);
+      break;
+    case 'snares':
+      snares.fill(false);
+      break;
+    case 'hiHats':
+      hiHats.fill(false);
+      break;
+    case 'rideCymbals':
+      rideCymbals.fill(false);
+      break;
+  }
+}
